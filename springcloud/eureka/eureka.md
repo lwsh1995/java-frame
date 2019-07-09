@@ -10,9 +10,7 @@ eureka server 和 client 采用心跳机制，server不停检查client是否上�
 
 低于某个比率则警告上线率太低，不知道是否上线还是下线，则当作为上线。
 
-![img](../eureka/hign.png)
-
-![img](hign.png)
+![img](https://github.com/lwsh1995/java-application/blob/master/springcloud/eureka/high.png)
 
 公共maven依赖
 
