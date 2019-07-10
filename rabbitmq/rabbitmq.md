@@ -1,3 +1,7 @@
+### 安装docker
+
+    docker run -d --hostname rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.7.16-management
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/lwsh1995/java-/edit/master/index.md) to maintain and preview the content for your website in Markdown files.

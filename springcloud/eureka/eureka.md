@@ -12,7 +12,7 @@ eureka server 和 client 采用心跳机制，server不停检查client是否上�
 
 ![img](./hign.png)
 
-![img](hign.png)
+![img](../eureka/hign.png)
 
 公共maven依赖
 
