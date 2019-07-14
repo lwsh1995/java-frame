@@ -21,7 +21,18 @@ maven依赖
 
     <dependency>
         <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-config-server</artifactId>
+        <version>2.1.2.RELEASE</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         <version>2.1.2.RELEASE</version>
     </dependency>
 
@@ -124,6 +135,14 @@ application.yml，basedir配置拉取的配置文件存放目录
 并且会把两个文件合并，有时会导致问题。一般以order.yml放置所有配置文件的公共参数。
     
 在order工程中不使用application.yml的配置方式，创建bootstrap.yml文件，
+
+引入maven依赖，order与config server通过rabbitmq传递配置更新
+
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        <version>2.1.2.RELEASE</version>
+    </dependency>
 
 springboot则会优先拉取配置文件在启动，避免读取不到配置文件报错，在启动类加@EnableDiscoveryClient
 
