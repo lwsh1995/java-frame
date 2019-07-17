@@ -12,6 +12,8 @@
         <module>eureka</module>
         <module>product</module>
         <module>order</module>
+        <module>config</module>
+        <module>gateway</module>
     </modules>
 
     <parent>

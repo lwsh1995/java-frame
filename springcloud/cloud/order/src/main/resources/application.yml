@@ -1,12 +1,24 @@
-spring:
-  application:
-    name: order
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-server:
-  port: 8702
-PRODUCT:
-  ribbon:
-    NFLoadBalancerRuleClientName: com.netflix.loadbalancer.RandomRule
+#spring:
+#  application:
+#    name: order
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#server:
+#  port: 8702
+#PRODUCT:
+#  ribbon:
+#    NFLoadBalancerRuleClientName: com.netflix.loadbalancer.RandomRule
+#spring:
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#spring:
+#  cloud:
+#    stream:
+#      bindings:
+#        queueName:
+#          group: order

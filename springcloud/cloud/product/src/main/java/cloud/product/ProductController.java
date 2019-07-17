@@ -17,7 +17,7 @@ public class ProductController {
     private CloudInfoRepository cloudInfoRepository;
 
     @GetMapping("/list")
-    public List<CloudInfo> list(){
+    public List<CloudInfo> list() throws InterruptedException {
         return cloudInfoRepository.findById(1);
     }
 }
